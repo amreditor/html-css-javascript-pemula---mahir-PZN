@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar Grid area</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100px auto 100px;
+            grid-template-rows: 50px auto 50px;
+            grid-template-areas:
+                "header header header"
+                ". content ."
+                "footer footer footer";
+        }
+
+
+        .header {
+            background-color: aqua;
+            grid-area: header;
+        }
+
+        .footer {
+            background-color: aqua;
+            grid-area: footer;
+        }
+
+        .content {
+            background-color: antiquewhite;
+            grid-area: content;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            Selamat datang di web Code Zero
+        </div>
+        <div class="content">
+            <h1>Code Zero</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, reiciendis repellat placeat minus
+                minima eum recusandae voluptatum eveniet nulla et, ex suscipit perspiciatis obcaecati, libero magnam
+                voluptas quia officia aut quos natus delectus ipsum. Provident voluptatem dolor eos est?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, reiciendis repellat placeat minus
+                minima eum recusandae voluptatum eveniet nulla et, ex suscipit perspiciatis obcaecati, libero magnam
+                voluptas quia officia aut quos natus delectus ipsum. Provident voluptatem dolor eos est?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, reiciendis repellat placeat minus
+                minima eum recusandae voluptatum eveniet nulla et, ex suscipit perspiciatis obcaecati, libero magnam
+                voluptas quia officia aut quos natus delectus ipsum. Provident voluptatem dolor eos est?</p>
+        </div>
+        <div class="footer">
+            Develop with love by Code Zero
+        </div>
+    </div>
+
+</body>
+
+</html>

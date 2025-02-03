@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid line name </title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: [cline1]100px [cline2] auto [cline3]100px [cline4];
+            grid-template-rows: [rline1] 50px [rline2] auto [rline3] 100px [rline4];
+        }
+
+        .content {
+            margin: 10px;
+            background-color: aqua;
+            padding: 10px;
+            border: 2px solid #333;
+        }
+
+        .header {
+            background-color: aqua;
+            grid-column-start: cline1;
+            grid-column-end: cline4;
+            grid-row-start: rline1;
+            grid-row-end: rline2;
+        }
+
+        .footer {
+            background-color: aqua;
+            grid-column-start: cline1;
+            grid-column-start: cline4;
+            grid-row-start: rline3;
+            grid-row-end: rline4;
+        }
+
+        .content {
+            background-color: antiquewhite;
+            grid-column-start: cline2;
+            grid-column-end: cline3;
+            grid-row-start: rline2;
+            grid-row-end: rline3;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <div class="content">
+            <h1>content 1</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ea.</p>
+        </div>
+        <div class="content">
+            <h1>content 2</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ea.</p>
+        </div>
+        <div class="content">
+            <h1>content 3</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ea.</p>
+        </div>
+        <div class="content">
+            <h1>content 4</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ea.</p>
+        </div>
+        <div class="content">
+            <h1>content 5</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ea.</p>
+        </div>
+        <div class="content">
+            <h1>content 6</h1>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, ea.</p>
+        </div>
+    </div> -->
+    <div class="container">
+        <div class="header">
+            Selamat datang di web Code Zero
+        </div>
+        <div class="content">
+            <h1>Code Zero</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, reiciendis repellat placeat minus
+                minima eum recusandae voluptatum eveniet nulla et, ex suscipit perspiciatis obcaecati, libero magnam
+                voluptas quia officia aut quos natus delectus ipsum. Provident voluptatem dolor eos est?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, reiciendis repellat placeat minus
+                minima eum recusandae voluptatum eveniet nulla et, ex suscipit perspiciatis obcaecati, libero magnam
+                voluptas quia officia aut quos natus delectus ipsum. Provident voluptatem dolor eos est?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis fugit, reiciendis repellat placeat minus
+                minima eum recusandae voluptatum eveniet nulla et, ex suscipit perspiciatis obcaecati, libero magnam
+                voluptas quia officia aut quos natus delectus ipsum. Provident voluptatem dolor eos est?</p>
+        </div>
+        <div class="footer">
+            Develop with love by Code Zero
+        </div>
+    </div>
+</body>
+
+</html>

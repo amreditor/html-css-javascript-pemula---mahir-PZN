@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pembelajaran html css</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            background-color: rgb(162, 250, 255);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+        }
+
+        .menu-link {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .menu-link li a {
+            text-decoration: none;
+            font-size: 17px;
+            padding: 15px;
+            color: rgb(21, 0, 255);
+            text-transform: uppercase;
+            font-weight: 600
+        }
+
+        .menu-link li a:hover {
+            color: rgb(162, 250, 255);
+            background: #fff;
+            transition: .3s ease-in-out;
+        }
+
+        main{
+            padding: 20px;
+            overflow: auto;
+        }
+         
+        .card{
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .card img{
+            width: 400px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <h2>code zero</h2>
+        </div>
+        <ul class="menu-link">
+            <li><a href="#home">home</a></li>
+            <li><a href="#j">about</a></li>
+            <li><a href="#t">contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <article class="card">
+            <h4>ada seorang anak yang terjebak di kamar</h4>
+            <img src="gabut.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quas ad qui, nemo magnam quisquam tempore
+                quaerat quia reprehenderit aliquam maiores deleniti quos esse quibusdam veritatis dolore, iste accusamus
+                vel nulla.</p>
+        </article>
+    </main>
+    <footer>
+        <p>@copyright 2025</p>
+    </footer>
+</body>
+
+</html>
