@@ -1,0 +1,39 @@
+div{
+    padding: 20px;
+}
+h2{
+    color: blue;
+}
+.box{
+    padding: 20px;
+    background-color: bisque;
+    margin-top: 10px;
+    border-top-left-radius: 16px;
+}
+.box h3{
+    font-size: 1.2em;
+}
+.filter{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+img{
+    width: 200px;
+}
+.img1{
+    filter: blur(2px);
+}
+.img2{
+    filter: grayscale(60%);
+}
+.img3{
+    filter: drop-shadow(0px 0px 12px);
+}
+.img4{
+    filter: hue-rotate(290deg) ;
+}
+.img5{
+    filter: drop-shadow(16px 16px 20px rgb(21, 204, 143)) invert(75%);
+}

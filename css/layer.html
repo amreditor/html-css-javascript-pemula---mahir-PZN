@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>belajar menggunakan layer</title>
+    <style>
+        @layer b,a;
+        h2 {
+            color: blue;
+        }
+
+        @layer a {
+            h1 {
+                color: green;
+            }
+        }
+
+        @layer b {
+            h1 {
+                color: pink;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- layer a di timpa oleh layer b , tapi bisa di ubah urutan nya dengan @layer-->
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <h2>Lorem ipsum dolor sit.</h2>
+</body>
+
+</html>
