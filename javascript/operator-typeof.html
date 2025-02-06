@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>operator type of</title>
+</head>
+
+<body>
+    <script>
+        let data = 12
+
+
+
+        const typedata = typeof data
+        document.writeln(`<p>${typedata}</p>`)
+        if (typeof data === Number) {
+            document.writeln("number")
+        } else if (typeof data === String) {
+            document.writeln("<p>String</p>")
+        } else if (typeof data === Boolean) {
+            document.writeln("Boolean")
+        } else if (typeof data === Object) {
+            document.writeln("Object")
+        } else {
+            console.log("nothing")
+        }
+    </script>
+</body>
+
+</html>
