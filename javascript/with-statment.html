@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With statment</title>
+</head>
+
+<body>
+
+    <script>
+
+        const person = {
+            firstName : "adam",
+            middleName : "Muhammad",
+            lastName : "Ridwan"
+        }
+
+        const firstName = "Budi"
+        const lastName = "Nugraha"
+        
+        with(person){
+            document.writeln(firstName)
+            document.writeln(middleName)
+            document.writeln(lastName)
+
+        }
+    </script>
+
+</body>
+
+</html>

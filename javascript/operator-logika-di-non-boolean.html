@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>operator logika di non boolean</title>
+</head>
+
+<body>
+    <script>
+
+        // operator or di non boleean akan mengambil bagian kiri ke kanan truthy
+        // jika kiri tidak true maka ambil yang kanan
+        console.info("hello" || "")
+        console.info("" || [])
+        console.info("0" || "NOL")
+        console.info(0 || "NOL")
+        console.info(null || "NULL")
+        console.info(undefined || "UNDIFINED")
+        console.info(0 || false)
+
+        const person = {
+            firstName: "homi",
+            lastName: "komi"
+        }
+
+        const name = person.firstName || person.lastName
+        console.info(name)
+
+        // operator and di non boleean akan mengambil bagian kiri ke kanan falsy
+        // jika kiri tidak false maka ambil yang kanan
+        console.info("Hello" && '')
+        console.info("" && [])
+        console.info(null && "NNULL")
+        console.info(undefined && "UNDIFINED")
+        console.info("undifined" && "null")
+
+    </script>
+</body>
+
+</html>
