@@ -17,8 +17,20 @@
         let lastName = 'Ridwan'
         const laki = true
 
-        let hasil = angka1 + angka2 
+        let hasil = angka1 + angka2
         document.writeln(hasil)
+
+        let fullName = firstName + " " + middleName + " " + lastName
+
+        function sayHello(name1, name2) {
+            document.writeln(`<p>hallo perkenalkan nama saya ${name1} ${name2}</p>`)
+        }
+
+        sayHello(firstName,middleName)
+
+        laki = "laki-laki" ?? false
+
+        document.writeln(`<p>${laki}</p>`)
     </script>
 </body>
 
