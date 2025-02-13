@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object method</title>
+</head>
+
+<body>
+
+    <script>
+
+
+        const person = {
+            sayhello: name => document.writeln(`<p>hello ${name}</p>`)
+        }
+
+        person.sayhello("adam")
+
+        const hello = {
+            indoensia: name => document.writeln("selamat pagi"),
+            japan: name => document.writeln("ohayou ghozaimasu")
+        }
+
+        // studi kasus bila sudah di tempatkan name dalam object
+        const orang = {
+            name: "adam"
+        }
+
+        orang.say = (name) => {
+            document.writeln(`<p> hello ${name}</p>`)
+        }
+
+        orang.say("budi")
+    </script>
+
+</body>
+
+</html>

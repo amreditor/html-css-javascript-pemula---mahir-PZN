@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closure</title>
+</head>
+
+<body>
+
+    <script>
+
+        function createAdder(value) {
+            const owner = "saya"
+
+            function add(param) {
+                console.info(owner)
+                return value + param
+            }
+
+            return add
+        }
+
+        const addTwo = createAdder(10)
+        // function addTwo(param){
+        //     console.log("saya")
+        //     return 2 + param
+        // }
+
+        console.info(addTwo(10))
+        console.info(addTwo(20))
+
+    </script>
+
+</body>
+
+</html>

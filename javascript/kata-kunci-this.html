@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kata kunci this</title>
+</head>
+
+<body>
+
+    <script>
+
+        console.info(this)
+
+        function sample() {
+            console.log(this)
+
+            function inner() {
+                console.info(this)
+            }
+            inner()
+        }
+
+        sample()
+
+        const person = {
+            name: "Eko",
+            sayHello: function (value) {
+                console.info(`hello ${value} my name is ${this.name}`)
+                document.writeln(`<p> hello ${value} my name is ${this.name}</p>`)
+            }
+        }
+        person.sayHello("hmm")
+    </script>
+
+</body>
+
+</html>
