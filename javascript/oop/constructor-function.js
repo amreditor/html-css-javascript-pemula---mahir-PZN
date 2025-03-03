@@ -10,3 +10,4 @@ function person (name){
 }
 
 const koko = new person("koko");
+const hihi = new person("hihi");
