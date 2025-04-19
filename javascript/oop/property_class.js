@@ -7,4 +7,3 @@ class person {
 
 const adam = new person("Adam")
 console.log(adam.name)
-const nime = new person("nime")
