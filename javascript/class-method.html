@@ -13,12 +13,22 @@
         class person {
             constructor(name) {
                 this.name = name
-                this.sayHello = function (name) {
-                    console.log(`hello selamat datang ${name}`)
-                }
+            }
+
+            sayHello(name) {
+                console.info(`Hello ${name}, my name is ${this.name}`)
             }
         }
-        person
+
+
+        const eko = new person("eko")
+        console.info(eko)
+
+        const budi = new person("Budi")
+        console.info(budi)
+
+        eko.sayHello("joko")
+        budi.sayHello("joko")
     </script>
 </body>
 
